@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { mobile } from '../responsive';
-import { contact, e, social } from '../utils/data/footerData';
-import { Link } from 'react-router-dom';
+import styled from "styled-components";
+import { mobile } from "../responsive";
+import { contact, e, social } from "../utils/data/footerData";
+import { Link } from "react-router-dom";
 
 const Container = styled.footer`
   background-color: ${({ theme }) => theme.bg};
@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   display: flex;
   margin: auto;
   max-width: 1200px;
-  ${mobile({ flexDirection: 'column', display: 'flex' })}
+  ${mobile({ flexDirection: "column", display: "flex" })}
 `;
 const Left = styled.aside`
   flex: 1;
@@ -48,7 +48,7 @@ const SocialIcon = styled.div`
 const Center = styled.aside`
   flex: 1;
   padding: 1.25rem;
-  ${mobile({ display: 'none' })}
+  ${mobile({ display: "none" })}
 `;
 
 const Title = styled.h3`
@@ -103,11 +103,11 @@ const Footer = () => {
       <Wrapper role="complementary">
         <Left role="table">
           <Logo
-            aria-label="cierva design logo"
+            aria-label="Shop Authentic logo"
             role="banner"
-            title="Cierva Design"
+            title="Shop Authentic"
           >
-            Cierva Design
+            Shop Authentic
           </Logo>
           <Desc
             aria-label="about Cierva"
@@ -150,7 +150,7 @@ const Footer = () => {
                 <ListItem key={id}>
                   <Link
                     to={route}
-                    style={{ textDecoration: 'none' }}
+                    style={{ textDecoration: "none" }}
                     title={name}
                     role="list"
                     aria-label={name}
@@ -172,7 +172,7 @@ const Footer = () => {
                 <ContactItem key={id}>
                   <A
                     href={url}
-                    style={{ textDecoration: 'none' }}
+                    style={{ textDecoration: "none" }}
                     title={text}
                     role="link"
                     aria-label={text}

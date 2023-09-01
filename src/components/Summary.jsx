@@ -1,14 +1,14 @@
-import logo from '../assests/logo.png';
-import styled from 'styled-components';
-import { useEffect, useState } from 'react';
-import StripeCheckout from 'react-stripe-checkout';
-import { useHistory,Link } from 'react-router-dom';
+import logo from "../assests/logo.png";
+import styled from "styled-components";
+import { useEffect, useState } from "react";
+import StripeCheckout from "react-stripe-checkout";
+import { useHistory, Link } from "react-router-dom";
 
-import { mobile } from '../responsive';
+import { mobile } from "../responsive";
 // ui
-import Button from './ui/Button';
+import Button from "./ui/Button";
 //functions
-import { addToCart, payment } from '../utils/logic/cart';
+import { addToCart, payment } from "../utils/logic/cart";
 
 const KEY = process.env.REACT_APP_STRIPE;
 
@@ -17,7 +17,7 @@ const SummaryContainer = styled.aside`
   border: 0.5px solid lightgray;
   padding: 1.25rem;
   height: 20rem;
-  ${mobile({ height: '10rem', padding: '1rem', margin: '0 1rem' })}
+  ${mobile({ height: "10rem", padding: "1rem", margin: "0 1rem" })}
 `;
 
 const SummaryTitle = styled.h2`
@@ -28,8 +28,8 @@ const SummaryItem = styled.div`
   margin: 1.875rem 0rem;
   display: flex;
   justify-content: space-between;
-  font-weight: ${(props) => props.type === 'total' && '500'};
-  font-size: ${(props) => props.type === 'total' && '1.5rem'};
+  font-weight: ${(props) => props.type === "total" && "500"};
+  font-size: ${(props) => props.type === "total" && "1.5rem"};
 `;
 
 const SummaryItemText = styled.span``;
@@ -108,7 +108,7 @@ const Summary = ({ cart, username }) => {
       </SummaryItem>
       {username ? (
         <StripeCheckout
-          name="Cierva Design"
+          name="Shop Authentic"
           image={logo}
           billingAddress
           shippingAddress
@@ -118,7 +118,7 @@ const Summary = ({ cart, username }) => {
           stripeKey={KEY}
         >
           <Button
-            text={'CHECKOUT NOW'}
+            text={"CHECKOUT NOW"}
             onClick={handleClick}
             onKeyUp={handleClick}
           />
@@ -128,9 +128,9 @@ const Summary = ({ cart, username }) => {
           to="/auth"
           role="link"
           aria-label="this is a link to auth"
-          style={{ textDecoration: 'none' }}
+          style={{ textDecoration: "none" }}
         >
-          <Button text={'CHECKOUT NOW'} />
+          <Button text={"CHECKOUT NOW"} />
         </Link>
       )}
     </SummaryContainer>
