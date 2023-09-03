@@ -2,7 +2,7 @@ export const categories = [
   {
     _id: 1,
     img: 'https://disedulcejuana.com.ar/wp-content/uploads/2021/03/78929526_1241698686022750_5666710611174621184_o.jpg',
-    title: 'SHIRT STYLE!',
+    title: 'VAPE',
     alt: 'women with short shirt',
     tags: 'shirts',
   },
