@@ -7,7 +7,7 @@ export const e = [
   {
     id: 2,
     route: '/products/coats',
-    name: 'Coats',
+    name: 'Vape',
   },
   {
     id: 3,
