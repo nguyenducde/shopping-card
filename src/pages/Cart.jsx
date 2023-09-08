@@ -92,7 +92,7 @@ const Cart = ({ darkMode, setDarkMode }) => {
             role="link"
             aria-label="link to home"
           >
-            <ButtonElement text={'CONTINUE SHOPPING'} />
+            <ButtonElement text={'Tiếp tục mua sắm'} />
           </Link>
           <TopTexts>
             <TopText
@@ -102,7 +102,7 @@ const Cart = ({ darkMode, setDarkMode }) => {
               aria-label={`you have ${cart.quantity} products in your cart`}
               title={`you have ${cart.quantity} products in your cart`}
             >
-              <Shop /> Shopping Bag({cart.quantity})
+              <Shop /> Túi mua sắm({cart.quantity})
             </TopText>
             {username ? (
               <TopText
@@ -113,16 +113,16 @@ const Cart = ({ darkMode, setDarkMode }) => {
                 title={`yours active orders`}
               >
                 <ShoppingBasket />
-                Orders
+                Đặt hàng
               </TopText>
             ) : null}
           </TopTexts>
           {/* si el usuario esta logeado muestra le permite comprar, sino tiene que logearse */}
           {username ? (
-            <ButtonElement text={'CHECKOUT NOW'} />
+            <ButtonElement text={'THANH TOÁN NGAY'} />
           ) : (
             <Link to="/auth" style={{ textDecoration: 'none' }}>
-              <ButtonElement text={'CHECKOUT NOW'} />
+              <ButtonElement text={'THANH TOÁN NGAY'} />
             </Link>
           )}
         </Top>

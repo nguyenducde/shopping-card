@@ -152,7 +152,7 @@ const ProductsCarts = ({ cart, username }) => {
                     </Link>
                     <Details>
                       <ProductName>
-                        <b>Product:</b> {product.name}
+                        <b>Sản phẩm:</b> {product.name}
                       </ProductName>
                       <ProductColor
                         color={product.color}
@@ -160,14 +160,14 @@ const ProductsCarts = ({ cart, username }) => {
                         aria-label={product.color}
                       />
                       <ProductSize>
-                        <b>Size:</b> {product.size}
+                        <b>Kích thước:</b> {product.size}
                       </ProductSize>
                       <br></br>
                       <ProductDescription
                         title={product.description}
                         aria-label={product.description}
                       >
-                        <b>Description:</b> {product.description}
+                        <b>Mô tả:</b> {product.description}
                       </ProductDescription>
                     </Details>
                   </ProductDetail>
