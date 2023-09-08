@@ -226,7 +226,7 @@ const Product = ({ darkMode, setDarkMode }) => {
                 />
                 {/* action button */}
                 <Button
-                  text="ADD TO CART"
+                  text="THÊM VÀO GIỎ HÀNG"
                   onClick={handleClick}
                   tabIndex="0"
                   onKeyUp={(e) => {
