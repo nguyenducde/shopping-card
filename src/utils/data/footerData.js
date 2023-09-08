@@ -29,7 +29,7 @@ export const e = [
   {
     id: 24,
     route: '/',
-    name: 'My Account',
+    name: 'Tài khoản của tôi',
   },
   {
     id: 25,
@@ -39,13 +39,13 @@ export const e = [
   {
     id: 26,
     route: '/',
-    name: 'Privacy Policy',
+    name: 'Chính sách',
   },
 
   {
     id: 27,
     route: '/',
-    name: 'Home',
+    name: 'Trang chủ',
   },
   {
     id: 28,

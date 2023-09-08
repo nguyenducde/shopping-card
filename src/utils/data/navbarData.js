@@ -2,7 +2,7 @@ export const e = [
   {
     id: 1,
     route: '/',
-    name: 'Home',
+    name: 'Trang chủ',
   },
   {
     id: 2,
