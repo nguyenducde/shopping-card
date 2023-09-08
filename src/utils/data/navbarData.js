@@ -12,11 +12,11 @@ export const e = [
   {
     id: 3,
     route: '/products/jackets',
-    name: 'Jackets',
+    name: 'Quần',
   },
   {
     id: 4,
     route: '/products/shirts',
-    name: 'Shirts',
+    name: 'Áo',
   },
 ];
