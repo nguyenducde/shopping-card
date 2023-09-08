@@ -21,9 +21,9 @@ const Home = ({ darkMode, setDarkMode }) => {
     <Container>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Slider />
-      <Title text={'Collections'} />
+      <Title text={'Bộ sưu tập'} />
       <Categories />
-      <Title text={'Products'} />
+      <Title text={'Các sản phẩm'} />
       <SearchBar />
       <Products />
       <Newsletter />

@@ -21,10 +21,10 @@ const Announcement = () => {
     <Container role="banner">
       <Title
         role="complementary"
-        title="Free shipping on orders over $50!"
-        aria-label="Free shipping on orders over $50!"
+        title="Miễn phí ship cho đơn hàng 500.000 trở lên!"
+        aria-label="Miễn phí ship cho đơn hàng 500.000 trở lên!"
       >
-        Free shipping on orders over $50!
+        Miễn phí ship cho đơn hàng 500.000 trở lên!
       </Title>
     </Container>
   );
