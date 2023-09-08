@@ -176,7 +176,7 @@ const Product = ({ darkMode, setDarkMode }) => {
               >
                 {product.description}
               </Description>
-              <Price tabIndex="0">$ {product.price}</Price>
+              <Price tabIndex="0">{product.price + "VND"}</Price>
               <FilterContainer role="menu">
                 <Filter tabIndex="0" aria-label="color section">
                   <FilterTitle tabIndex="0"></FilterTitle>
