@@ -91,7 +91,7 @@ const Product = ({ product }) => {
           title={product.imgUrl}
           aria-label={`product-image:${product.description}`}
         />
-        <span>adidas</span>
+        {/* <span>adidas</span> */}
         <h4>{product.name}</h4>
         <div className="stars">
           <i className="fa-solid fa-star"></i>
@@ -101,7 +101,7 @@ const Product = ({ product }) => {
           <i className="fa-solid fa-star"></i>
         </div>
         <div className='info-product'>
-          <h4 className="price">{product.price}</h4>
+          <h4 className="price">{product.price + " VND"}</h4>
           <a href="#" className='button_shop-now'>
             <i className="fa-solid fa-cart-shopping buy-icon"></i>
           </a>
