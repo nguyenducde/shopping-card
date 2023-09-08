@@ -118,7 +118,7 @@ const Summary = ({ cart, username }) => {
           stripeKey={KEY}
         >
           <Button
-            text={"CHECKOUT NOW"}
+            text={"THANH TOÁN NGAY"}
             onClick={handleClick}
             onKeyUp={handleClick}
           />

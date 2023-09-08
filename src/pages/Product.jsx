@@ -198,7 +198,7 @@ const Product = ({ darkMode, setDarkMode }) => {
                   ))}
                 </Filter>
                 <Filter aria-label="size section">
-                  <FilterTitle tabIndex="0">Size</FilterTitle>
+                  <FilterTitle tabIndex="0">Kích thước</FilterTitle>
                   <FilterSize
                     title={size}
                     onChange={(e) => setSize(e.target.value)}

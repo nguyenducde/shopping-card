@@ -203,7 +203,7 @@ const ProductsCarts = ({ cart, username }) => {
           ) : null}
         </>
       ) : (
-        <SadFaceMsg text={'Your Cart Is Empty'} />
+        <SadFaceMsg text={'Giỏ hàng trống'} />
       )}
     </Container>
   );

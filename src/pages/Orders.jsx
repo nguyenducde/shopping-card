@@ -187,7 +187,7 @@ const Orders = ({ userId }) => {
                   title={`Order: ${order._id}`}
                 >
                   <Label>
-                    Order: <ShoppingBasket />
+                    Đặt hàng: <ShoppingBasket />
                   </Label>
                   <Info>{order._id} </Info>
                 </Cell>
@@ -196,7 +196,7 @@ const Orders = ({ userId }) => {
                   aria-label={`Status: ${order.shippingStatus}`}
                   title={`Status: ${order.shippingStatus}`}
                 >
-                  <Label>Status:</Label>
+                  <Label>Tình trạng:</Label>
                   <Info>
                     {order.shippingStatus} {getStatusIcon(order.shippingStatus)}
                   </Info>
@@ -214,7 +214,7 @@ const Orders = ({ userId }) => {
                   aria-label={`Created : ${formatCreatedAt(order.createdAt)}`}
                   title={`Created: ${formatCreatedAt(order.createdAt)}`}
                 >
-                  <Label>Created :</Label>
+                  <Label>Đã tạo :</Label>
                   <Info>
                     {formatCreatedAt(order.createdAt)} <CalendarTodayOutlined />
                   </Info>
