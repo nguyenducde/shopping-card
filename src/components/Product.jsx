@@ -102,7 +102,7 @@ const Product = ({ product }) => {
         </div>
         <div className='info-product'>
           <h4 className="price">{product.price}</h4>
-          <a href="#">
+          <a href="#" className='button_shop-now'>
             <i className="fa-solid fa-cart-shopping buy-icon"></i>
           </a>
         </div>
